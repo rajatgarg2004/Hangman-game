@@ -73,9 +73,9 @@ def Guess(dashes,words):
             print(' '.join([str(elem) for elem in dashes]))
             print("\nWrong letters: "+ ','.join([str(elem) for elem in wrong_l]))
             
-import wordList as wL                  
+import List as L                
 def play():
-    word = list(random.choice(wL.final_list))
+    word = list(random.choice(L.final_list))
     dash = [ "_" for x in range(0,len(word)) ]
     for i in dash:
         print(i,end=" ")
@@ -83,7 +83,7 @@ def play():
   
 name = input("Enter Your Name: ")
 print("Hi, " + name + " Let's play Hangman.\n ")
-print("   ******RULES******\n  1. A word will be selected randomly.\n  2. You have to guess the word by typing one letter in each turn and you have 4 lives.\n  3. After 4 wrong guesses, the man will be hung and you'll lose the game.\n  4. If you type the wrong letter again, you'll lose another life.\n  5. If you type the right alphabet again, You will not lose a life.\n  6. Press 1 to continue or 2 to exist ")
+print("   ******RULES******\n  1. A word will be selected randomly.\n  2. You have to guess the word by typing one letter in each turn and you have 4 lives.\n  3. After 4 wrong guesses, the man will be hung and you'll lose the game.\n  4. If you type the wrong letter again, you'll lose another life.\n  5. If you type the right alphabet again, You will not lose a life.\n  6. Press 1 to continue or 2 to exit ")
 num = int(input())
 if num==1:
     play()
